@@ -2,7 +2,6 @@
 Ingresar N enteros, visibilizar la suma de los números pares de la
 lista, cuantos npumeros pares existen y cuales es el rpomedio de los
 numero impares
-'''
 
 n_elementos = int(input("Ingrese la cantidad de números: "))
 
@@ -36,3 +35,4 @@ else:
  else:
      promedio_impares = suma_impares / conteo_impares
      print(f"El promedio de impares es: {promedio_impares}")
+'''
