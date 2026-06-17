@@ -1,0 +1,12 @@
+//Tarea: Ejercicio: Meses del año con switch, deben simplificar y agregar eficacia con el concepto
+// Dry don't repeat yourself: Evitar repetir tu código
+// Crear una función como la de getDay para los meses del año
+
+let months = ['january', 'Febrary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Dicember'];
+function getMonths(n){
+    if (n < 1 || n > 12 ){
+        throw new Error ('out or range');
+    }
+    return months [n-1];
+}
+console.log(getMonths(6));
