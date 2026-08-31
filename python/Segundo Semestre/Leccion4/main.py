@@ -202,3 +202,44 @@ print(tupla)
 print(4 in tupla) #Accion booleana, su respuesta es de tipo boolena
 #Lo que podemos usar dentro de tuplas son: index, count,len
 #En tuplas se puede convertir de tupla a listas y listas a tuplas
+
+#Repaso de set o conjunto
+#para definir un conjunto
+conjunto= set()
+conjunto1 = {}
+conjunto.add(7)
+conjunto.add('Hola')
+print(conjunto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
