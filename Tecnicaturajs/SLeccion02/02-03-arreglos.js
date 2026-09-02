@@ -1,0 +1,35 @@
+
+//Creación de Arrays o arreglos
+//let autos = new Array('ferrari', 'renaut',BMW); ESTA ES LA SINTAXIS
+const autos =['ferrari', 'renaut','BMW'];
+console.log(autos);
+
+//Recorremos los elementos de un arreglo
+console.log(autos[0]);
+console.log(autos[2]);
+
+for(let i = 0; i < autos.length; i++){
+    console.log(i+' : '+autos[i]);
+}
+
+// Modificamos los elementos del arreglo
+autos[1] ='volvo'
+console.log(autos[1]);
+
+//Agregamos nuevos valores al arreglo
+autos.push('Audi'); // Agregamos el elemento al final del arreglo
+console.log(autos);
+
+// Otra formas de agregar elementos al arreglo
+autos[autos.length]='Porche';
+console.log(autos);
+
+//Tercera forma de agregar elementos teniendo CUIDADO
+autos[6] = 'Renault';
+console.log(autos);
+
+//Como preguntar si es una array o arreglo
+console.log(Array.isArray(autos)); //Devuelve un booleano
+
+
+console.log(autos instanceof Array); //Preguntamos si la variable es una instacia de la clase Array

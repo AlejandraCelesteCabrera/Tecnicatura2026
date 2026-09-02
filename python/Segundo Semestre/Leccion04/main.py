@@ -1,5 +1,6 @@
 #Lista = Ariel, Liliana, Natalia, Osvaldo
 #Colecciones en Python
+from collections.abc import dict_items
 
 #Las lista es lo que se conoce en tros lenguajes como arreglos o vectores
 
@@ -205,11 +206,92 @@ print(4 in tupla) #Accion booleana, su respuesta es de tipo boolena
 
 #Repaso de set o conjunto
 #para definir un conjunto
-conjunto= set()
-conjunto1 = {}
-conjunto.add(7)
-conjunto.add('Hola')
-print(conjunto)
+conjunto2= set()
+conjunto1 = {'bye', }
+conjunto2.add(7)
+conjunto2.add('Hola')
+print(conjunto2)
+conjunto1.add('Hola')
+print(conjunto1)
+print( 3 not in conjunto1) #preguntando si el número 3 no esta en el conjunto1
+
+#Como hace la igualdad de dos conjuntos
+print(conjunto1 == conjunto2) #Nos devuelve como respuesta un booleano
+
+#Operaciones en conjuntos
+conjunto3 = conjunto1 | conjunto2 # La lenea une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #Que elemento tienen en comun
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 #Asignar que esta en el conjutno1 y no en el conjunto2
+print(conjunto3)
+
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 # Son los elementos que estan en los conjuntos y no comparten
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(conjunto1.issubset(conjunto3)) # Aqui preguntamos si un con junto es un subconjunto dentro de otro
+print(conjunto3.issuperset(conjunto1))
+print(conjunto3.issuperset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1))
+print(conjunto3.issuperset(conjunto2))
+print(conjunto2.issuperset(conjunto3))
+
+# Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en comun
+print(conjunto1.issuperset(conjunto2)) # No hay cosas en comun
+
+#Convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset #Esto hace que el conjunto sea totalmente inmutable
+# No se puede agregar, modificar ni eliminar el elemento del conjunto
+
+# Repaso Dicicionario
+
+diccionarioNuevo ={'Azul': 'Blue','Rojo': 'Red', 'Verde': 'Green','Amarillo': 'Yellow'}
+print(diccionarioNuevo)
+
+# Como eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {'Ariel': {'Edad': 40, 'Altura': 1.83}, 'Osvaldo':[45, 1.85], 'Natalia': [35, 1.67]}
+print(diccionario2)
+
+seleccionArgentina = {
+    10: {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
