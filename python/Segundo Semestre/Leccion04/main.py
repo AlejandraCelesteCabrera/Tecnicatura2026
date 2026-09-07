@@ -2,14 +2,14 @@
 #Colecciones en Python
 from collections.abc import dict_items
 
-#Las lista es lo que se conoce en tros lenguajes como arreglos o vectores
+#La lista es lo que se conoce en tros lenguajes como arreglos o vectores
 
 nombres =['Naty','Osvaldo','Lily','Ariel']
 print(nombres)
 print(nombres[0:2])#Solo muestra el indice 0, 1 pero no el 2
 #Ir del inicio de la lista al indice (sin incluirlo)
 print(nombres[ :3])#Indices a mostrar 0,1,2
-#Desde el indice indicado hasta el final
+#Desde el índice indicado hasta el final
 print(nombres[1: ])
 #Modificamos un valor
 nombres[2] = 'Liliana'
@@ -18,7 +18,7 @@ print(nombres)
 
 #Iterar una lista
 
-for nombre in nombres: #nombre es singular, la ,lista es plural
+for nombre in nombres: #nombre es singular, la lista es plural
     print(nombre)
 else:
     print('Se acabaron los nombres de la lista')
@@ -35,7 +35,7 @@ nombres.append([4, 5])
 nombres.append([7])
 print(nombres)
 
-#Insertar un elelemento en un indice especifico
+#Insertar un elemento en un índice especificó
 nombres.insert(1, 'Alberto')
 print(nombres)
 nombres.insert(3,'Debora')
@@ -96,7 +96,7 @@ print('júpiter' not in planetas)
 planetas.add('Tierra')# add es una funcion
 print(planetas)
 
-#Eliminar elementos , puede arrojar un error si el elemento no existe
+#Eliminar elementos, puede arrojar un error si el elemento no existe
 planetas.remove('júpiter')#Esta funcion ante un mal ingreso u inexistenacia del elemento da error
 print(planetas)
 planetas.discard( 'Tierra')#Esta función no nos presenta ningún error
@@ -264,15 +264,31 @@ diccionario2 = {'Ariel': {'Edad': 40, 'Altura': 1.83}, 'Osvaldo':[45, 1.85], 'Na
 print(diccionario2)
 
 seleccionArgentina = {
-    10: {}
+    10: {'Nombre': 'Lio Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 millones', 'Posicion': 'extremo derecho'},
+    11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio':'12 millones', 'Posicion':'extremo derecho' },
+    24:{'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio':'35 millones', 'Posicion': 'media punta'},
+    19:{'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio':'3.5 millones', 'Posicion': 'defensa central'},
+     1:{'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio':'3.5 millones', 'Posicion': 'portero'}
 }
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
 
+#Como tarea agregar por lo menos 4 jugadores mas al dicicionario: seleccionArgentina
+print('Tenemos cargados en el diciconario la cantidad de: ',end=' ')
+print(len(seleccionArgentina))
 
+#Pilas usando listas
+pila = [1, 2, 3]
 
+#Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
 
-
-
-
+#Sacamos elementos desde el final
+elementoBorrado = pila.pop() #Quita el ultimo elemento y lo guarda en la variable
+print(f'Sacamos el elemento Borrado: {elementoBorrado}')
+print(f'la pila ahora queda asi: {pila}')
 
 
 
