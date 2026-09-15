@@ -290,7 +290,7 @@ elementoBorrado = pila.pop() #Quita el ultimo elemento y lo guarda en la variabl
 print(f'Sacamos el elemento Borrado: {elementoBorrado}')
 print(f'la pila ahora queda asi: {pila}')
 
-
+#
 
 
 

@@ -240,6 +240,3 @@ print(conjunto)
 
 
 
-
-
-
