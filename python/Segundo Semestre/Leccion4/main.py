@@ -212,31 +212,3 @@ conjunto.add('Hola')
 print(conjunto)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

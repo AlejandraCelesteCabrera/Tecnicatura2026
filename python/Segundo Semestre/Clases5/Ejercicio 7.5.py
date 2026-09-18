@@ -12,3 +12,20 @@
 #2
 #1
 #Si se ingresan números negativos no imprime nada
+
+def num_decendentes(n):
+    if n < 1:
+        return
+    else:
+        print(n)
+        num_decendentes(n - 1 )
+print('Imprimir desde 5:')
+num_decendentes(5)
+
+print('Imprimir desde 3:')
+num_decendentes(3)
+
+print('No imprime números negativos')
+num_decendentes(-5)
+
+
