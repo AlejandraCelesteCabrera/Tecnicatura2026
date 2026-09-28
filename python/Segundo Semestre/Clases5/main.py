@@ -70,13 +70,22 @@ def listaNombres(*nombres):#Normalmente se utiliza : +args
 listaNombres('Lucas', 'Jose', 'Claudia', 'Rosa', 'Maria')
 listaNombres('Marcos', 'Daniel', 'Romina', 'Pepe', 'Marcela', 'Carlos')
 
+def listarTerminos(**terminos): #Los mas utilizado es **kwargs para recibir los argumentos
+    for llave, valor in terminos.items(): #kwargs significa: key word argument
+        print(f'{llave}: {valor}')
 
+listarTerminos(IDE='Integrated Develoment Environment', PK='Primary Key')
+listarTerminos(Nombre='lionel Messi')
 
-
-
-
-
-
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2 = ['Tito', 'Pedro', 'Carlos']
+desplegarNombres(nombres2)
+desplegarNombres('Carla')
+#desplegarNombre(10,11) #No son objetos iterable
+desplegarNombres((10, 11)) #La conveetimos a una tupla, en un solo elemento no olvidar la coma
+desplegarNombres([(22,55)]) #La convertimos en una lista
 
 
 
