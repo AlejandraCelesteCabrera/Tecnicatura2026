@@ -1,11 +1,11 @@
 class Persona:
 
-   def __init__(self, nombre, apellido, edad): #Se lo llama método Init Dunder
+   def __init__(self, nombre, apellido, edad): #Se lo llama metodo Init Dunder
        self.nombre = nombre
        self.apellido = apellido
        self.edad = edad
 
-   def mostrar_detalle(self):
+   def mostrar_detalle(self):# self es iguala this
        print(f'Persona: {self.nombre} {self.apellido} {self.edad}')
 
 
@@ -30,3 +30,10 @@ print(f'El objeto1 modificado de la clase persona es: {persona1.nombre} {persona
 #Los metodos son el comportamiento que van a tener los objetos (acciones)
 persona1.mostrar_detalle()
 persona2.mostrar_detalle()
+
+Persona.mostrar_detalle()#Debemos pasarle una referencia para el self o dara error
+persona1.telefono = '444455552'
+print(persona1.telefono)
+print(f'Este es el teléfono: {persona1.nombre} {persona1.telefono}')# Hemos creado un atributo de un objeto
+
+# print(persona2.telefono) el objeto persona2 no tiene este atributo, da error
