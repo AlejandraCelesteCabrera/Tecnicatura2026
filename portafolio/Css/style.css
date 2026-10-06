@@ -9,3 +9,74 @@ a{
     text-decoration: none;
     color:rgb(91, 35, 67);
 }
+body{
+    background: rgb(66, 121, 144);
+    color: rgb(66, 7, 132);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Título del header*/
+.titulo{
+}
+/*Barra de navegación*/
+.navegation{
+}
+/*Enlaces de la barra de navegacion configurados como si fueran botones*/
+
+.navegation li{
+    font-size: 1rem;
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem;
+    bonder-radius: 0.5rem;
+    background: #3d2278;
+    box-shadow: 0 0 0.5rem rgba(rgb(227, 73, 232), rgb(10, 162, 212), rgb(26, 26, 155), alpha);
+}
+/* Estilo de los enlaces de la barra de navegation*/
+a{
+     text-decoration: none;
+    color:rgb(215, 211, 211);
+}
+.sobremi{
+    display: flex;
+    justify-content: center;
+}
+.container-sobremi{
+    display: flex;
+    width: 50%; /*ancho*/
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large; /*tamaño de la fuente*/
+    color: azure;
+}
+/*Media Queries agrupadas*/
+
+/*Celular(pantalla pequeña, hasta 767px)*/
+@media (max-width: 767px){
+    .titulo{
+        justify-content: center;
+    }
+    .navegation{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container-sobremi{
+        width: 100%;
+        padding: 1;
+        margin-top: 1rem; /*margen a lo alto*/
+        line-height: 2.5rem;/*Espacioado entre los parrafos del texto*/
+        font-size: small; /*tamaño de la fuente*/
+    }
+}
+/*Escritorio(pantalla , ancha,1024px y superiores*/
+@media (min-width: 1024px) {
+    .titulo{
+        justify-content: center;
+    }
+    .navegation{
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }   
+}
