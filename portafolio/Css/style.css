@@ -1,3 +1,19 @@
+/*Definiendo variable color en Css*/
+:root {
+ --body-bg-color:#423b3b;
+ --text-color:rgb(222, 219, 219);
+ --colorh1-color:rgb(247, 217, 243);
+}
+/*APLICANDO VARIABLES EN EL ROOT AL BODY DE NUESTRA WEB*/
+/*Reemplaze el body con el uso de variables css*/
+body {
+    background: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+    color: var(--colorh1-color);
+}
 .navegation{
     display: flex;
     gap: 3rem;
@@ -48,6 +64,12 @@ a{
     line-height: 2.5rem;
     font-size: large; /*tamaño de la fuente*/
     color: azure;
+    gap: 5rem;
+    align-items: center;
+
+}
+.img-perfil{
+    border-radius: 50%;
 }
 /*Media Queries agrupadas*/
 
@@ -67,6 +89,7 @@ a{
         margin-top: 1rem; /*margen a lo alto*/
         line-height: 2.5rem;/*Espacioado entre los parrafos del texto*/
         font-size: small; /*tamaño de la fuente*/
+        flex-direction: column;
     }
 }
 /*Escritorio(pantalla , ancha,1024px y superiores*/
