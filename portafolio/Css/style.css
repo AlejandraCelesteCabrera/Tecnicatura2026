@@ -71,6 +71,21 @@ a{
 .img-perfil{
     border-radius: 50%;
 }
+.experiencia, .estudios{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: aliceblue;
+}
+.container-experiencia, .container-estudios{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    margin: 7rem;
+}
+
 /*Media Queries agrupadas*/
 
 /*Celular(pantalla pequeña, hasta 767px)*/
@@ -91,7 +106,32 @@ a{
         font-size: small; /*tamaño de la fuente*/
         flex-direction: column;
     }
+    /*Agregando el responsivo de las secciones experiencia y estudios*/
+    .container-experiencia, .container-estudios{
+        width: 100%;
+        margin: 0rem;
+    }
+    .experiencia, .estudios{
+        width: 100%;
+        padding: 1 rem;
+        margin-top: 1rem;
+        font-size: small;
+    }    
 }
+/*Tableta 8pantalla medianas 768px y 1023px)*/
+@media(min-width: 768px) and (max-width: 1023px){
+    .titulo{
+        justify-content: center;
+    }
+    .navegation{
+        gap: 2rem;
+        justify-content: center;
+    }
+    .experiencia, .estudios{
+        width: 75%;
+    }
+}
+
 /*Escritorio(pantalla , ancha,1024px y superiores*/
 @media (min-width: 1024px) {
     .titulo{
@@ -102,4 +142,7 @@ a{
         justify-content: flex-end;
         margin: 0 3rem;
     }   
+    .experiencia, .estudios{
+        width: 75%;
+    }
 }
