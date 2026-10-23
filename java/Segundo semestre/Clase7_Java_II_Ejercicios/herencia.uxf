@@ -1,0 +1,28 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>40</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Figura&gt;&gt;
+
+--
+-nLados: int
+--
+Figura (int nLados)
+getNLados(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>240</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Triángulo&gt;&gt;
+
+--
+-nLados: int
+-l1,l2,l3 : float
+--
+Triángulo(int nLados)
+getNLados(): int
+area Triángulo(): float
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>240</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+
+--
+-nLados: int
+-lado: float
+--
+Cuadrado (int nLados)
+getNLados(): int
+area cuadrado (): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>190</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>190</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>180</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>180</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>130</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
