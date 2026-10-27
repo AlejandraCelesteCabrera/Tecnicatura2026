@@ -1,0 +1,76 @@
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: beige;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #777;
+}
+
+.footer-social svg {
+    width: 24px;
+    height: 24px;
+    fill: #afff;
+}
+
+/*Estilos reponsivo para pantallas de tamaño tablet y menores*/
+@media (max-width:768px){
+    .footer-container{
+        flex-direction: column; /*Mantener los elementos en una columna*/
+        align-items: center;/*Centrar los elementos horizontal,mente*/
+    }
+    .footer-social {
+        flex-wrap: wrap; /*Permitir que los iconos se envuelvan en multiples filas si es necesario*/
+        gap: 10px;/*Espacio entre los iconos*/
+    }
+    .footer-social a {
+        width: 35px;/*Reducir el ancho del bóton*/
+        height: 35px;/*Reducir la altura del icono*/
+    }
+    .footer-social svg {
+        width: 20px;/*Reducir el ancho del icono*/
+        height: 20px;/*Reducir la altura del icono*/
+    }
+}
+
+/*Estilps resposinvos para pantallas de tamaño movil*/
+@media(max-width: 40px){
+    .footer {
+        padding: 15px 0; /*Reducir el espcaio interno arriba y abajo*/
+    }
+    .footer-info {
+        margin-bottom: 5px;/*Reducir espacio debajo de la información*/
+        font-size: 14px;/*Reducir el tamaño de la fuente*/
+    }
+}
