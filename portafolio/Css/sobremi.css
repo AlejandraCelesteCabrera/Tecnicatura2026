@@ -18,6 +18,8 @@
 .img-perfil{
     border-radius: 50%;
     display: flex;
+    width:  200px;
+    height: 200px;
 
 }
 

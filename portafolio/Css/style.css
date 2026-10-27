@@ -1,8 +1,9 @@
 /*Definiendo variable color en Css*/
 :root {
  --body-bg-color:#423b3b;
- --text-color:rgb(222, 219, 219);
+ --text-color:rgb(2, 143, 96);
  --colorh1-color:rgb(247, 217, 243);
+ --fondo-proyecto: black;
 }
 /*APLICANDO VARIABLES EN EL ROOT AL BODY DE NUESTRA WEB*/
 /*Reemplaze el body con el uso de variables css*/
@@ -23,7 +24,7 @@ a{
 body{
     display: flex;
     flex-direction: column;
-    background: rgb(10, 4, 97);
+    background: rgb(43, 42, 59); 
     color: rgb(13, 106, 245);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -58,7 +59,7 @@ a{
     text-align: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background: #0075fc;
+    background: #322772;
     box-shadow: 0 0 0.5rem rgba(rgb(37, 26, 48), rgb(25, 62, 75), rgb(5, 5, 24), alpha);
 }
 /* Estilo de los enlaces de la barra de navegation*/

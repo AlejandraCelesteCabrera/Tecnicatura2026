@@ -1,0 +1,69 @@
+.proyectos{
+    width: 80%;
+    padding: 1rem;
+    background: var(--fondo-proyecto);
+}
+/*Esta es el contenedor general que engloba a los proyectos*/
+.galeria-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    justify-content: center;
+}
+/*Como es el contenedor del proyecto en general*/
+.proyecto{
+    background-color: rgb(53,52,52,52);
+    border: 1 px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33%-40%); /*Ajustar el ancho segun la calidad de proyectos a mostrar*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+    text-align: center;
+}
+/*Imagenes del proyecto*/
+.proyecto img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*Titulo del proyecto*/
+.proyecto h3{
+    margin-top: 10px;
+    font-size: 1.2 rem;
+}
+/*Descripcion del proyecto*/
+.proyecto p{
+    margin: 10px 0;    
+}
+/*Botones enlace ancor*/
+.proyecto a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: blue;
+    color: #ddd;
+    border-radius: 5px;
+}
+/*Botones del proyecto*/
+.proyecto a:hover{
+    background-color: blue;
+}
+
+/*Media queries para hacerlo reponsivo Celular*/
+@media (max-width: 767px){
+    .proyecto{
+        width: calc(100% - 40%);
+    }
+}
+/*Media queries para hacerlo reponsivo Tablet*/
+@media (min-width: 768px) and (max-witdh: 1023px){
+    .proyecto {
+        width: calc(50%- 40%);
+    }
+}
+/*Media queries para hacerlo reponsivo Desktop*/
+@media ( min-width: 1024px){
+    .proyecto{
+        width: calc(33% - -40%);
+    }    
+}
