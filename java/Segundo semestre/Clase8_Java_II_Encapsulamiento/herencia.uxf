@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>it=()-
+
+</help_text><element><id>UMLClass</id><coordinates><x>152</x><y>40</y><w>168</w><h>176</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: String
+-genero: char
+-edad: int
+-direccion: String
+--
++getNombre():Str
++getNombre(String): Void
++getGenero():char
++setGenero(char):void
++getEdad():int
++setEdad(int):void
++getDireccion():String
++setDireccion(String).void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>304</y><w>168</w><h>96</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+-idEmpleado:int
+-sueldo:double
+--
++getIdEmpleado():int
++getSueldo():double
++setSueldo(double):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>304</y><w>168</w><h>136</h></coordinates><panel_attributes>&lt;&lt;Clientes&gt;&gt;
+--
+-idCliente:int
+-fechaRegistro:Date
+-vip:boolean
+--
++getIdCliente():int
++getFechaRegistro():Date
++setFechaRegistro(Date):void
++idVip():boolean
++setVip(boolean):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>208</y><w>80</w><h>64</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>256</y><w>80</w><h>64</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>248</y><w>344</w><h>32</h></coordinates><panel_attributes>lt=()-
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>256</y><w>80</w><h>64</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
